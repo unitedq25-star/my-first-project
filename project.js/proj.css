@@ -1,0 +1,113 @@
+
+
+body {
+    background-image: 
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000');
+    background-size: cover;
+    background-position: center;
+    /* ... keep the rest of your body styles ... */
+
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: #213d6a;
+    padding: 30px;
+    border-radius: 16px;
+    width: 95%;
+    max-width: 600px;
+    color: rgb(212, 206, 206);
+}
+h1 { color: #8f8f08; text-align: center; }
+.text-input { display: flex; gap: 10px; }
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    background: #d2f412;
+    color: rgb(20, 12, 12);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.controls { margin-top: 20px; display: flex; flex-direction: column; gap: 15px; }
+.lang-row { display: flex; justify-content: space-around; align-items: center; }
+.action-buttons { display: flex; justify-content: center; gap: 20px; }
+.icon-btn {
+    background: #eca808;
+    color: rgb(20, 13, 13);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#translate-btn {
+    margin: auto;
+    background: #9f7611;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.app-logo {
+    display: block;
+    margin: 0 auto 10px auto; /* Centers the image */
+    width: 60px;               /* Adjust size here */
+    height: 60px;
+    filter: drop-shadow(0 0 6px #c2ced4); /* Gives it a cool glow */
+}
+  
+/* Update the clear button to use the ID you used in HTML */
+#clearBtn {
+    display: block;
+    margin: 20px auto 0 auto; /* Centers it */
+    width: fit-content; 
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #c5a00d;
+    color: #213d6a;
+    transition: 0.3s;
+}
+
+/* 1. Fix: Hover for the Translate Button */
+#translate-btn:hover {
+    background-color: #c49216; /* Lighter gold */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* 2. Fix: Hover for Icon Buttons (Speech, Stop, Copy) */
+.icon-btn:hover {
+    background-color: #ffc107; /* Brighter yellow */
+    transform: scale(1.1);      /* Slight zoom */
+}
+
+/* 3. Fix: Specific Hover for Stop Button */
+#stop-btn:hover {
+    background-color: #d3ff4dea; /* Turns red when you want to stop */
+    color: rgb(22, 15, 15);
+}
+
+/* 4. Fix: Hover for Clear Button */
+#clearBtn:hover {
+    background-color: hsl(0, 100%, 27%);
+    color: #170505f7;
+}
+
+
+#button:hover {
+  background-color: #091403;
+  color: rgb(102, 64, 64);
+} 
+#stop-btn:hover {
+    color: #0c0101; /* Changes icon to red when you hover to stop */
+}
