@@ -44,9 +44,10 @@ window.onload = function() {
         
         let utterance = new SpeechSynthesisUtterance(toText.value);
         utterance.lang = isKoreanToUrdu ? "ur-PK" : "ko-KR";
-        speechSynthesis.speak(utterance);
+        
         utterance.rate = 1.0;//for normal speed I mean for voice speed
         utterance.pitch= 1.0;// for normal voice I hope you like it 😉
+        speechSynthesis.speak(utterance);
     };
 
     // Stop Logic
