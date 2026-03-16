@@ -47,6 +47,7 @@ window.onload = function() {
         
         utterance.rate = 1.0;//for normal speed I mean for voice speed
         utterance.pitch= 1.0;// for normal voice I hope you like it 😉
+        speechSynthesis.cancel();// to avoid overlapping voice 
         speechSynthesis.speak(utterance);
     };
 
